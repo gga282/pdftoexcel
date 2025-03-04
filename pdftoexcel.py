@@ -30,7 +30,7 @@ table_settings={
 table=[]
 
 for page in pages_to_read:
-    extracted_table=page.extract_table(table_settings)
+    extracted_table=page.extract_tables(table_settings)
     if extracted_table:
         table.extend(extracted_table)
 
